@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo App</string>
+    <string name="capture_button_alt">Capture</string>
+    <string name="multi_face">Found multiple faces in taken photograph please try again.</string>
+    <string name="no_face">There is no faces in taken photograph please try again.</string>
+
+</resources>

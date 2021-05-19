@@ -1,0 +1,3 @@
+include ':textfaceMLSdk'
+include ':app'
+rootProject.name = "Facedetection Application"
