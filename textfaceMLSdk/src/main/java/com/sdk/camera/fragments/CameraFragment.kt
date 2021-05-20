@@ -2,7 +2,6 @@ package com.sdk.camera.fragments
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.res.Configuration
 import android.hardware.camera2.CameraMetadata.LENS_FACING_FRONT
 import android.hardware.display.DisplayManager
 import android.net.Uri
@@ -22,16 +21,13 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.sdk.SdkMainActivity
 import com.sdk.camera.utils.Constants.FACE_FRAGMENT
 import com.sdk.camera.utils.Constants.TEXT_FRAGMENT
 
-import com.sdk.camera.utils.LuminosityAnalyzer
 import com.sdk.camera.utils.SDKUtil
 import com.sdk.camera.utils.cameraUtil.aspectRatio
 import com.sdk.textfacemlsdk.R
@@ -39,7 +35,6 @@ import kotlinx.android.synthetic.main.camera_ui_container.*
 import kotlinx.android.synthetic.main.camera_ui_container.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.MainCoroutineDispatcher
 import kotlinx.coroutines.launch
 import java.io.File
 import java.text.SimpleDateFormat
@@ -59,11 +54,9 @@ class CameraFragment : Fragment(), View.OnClickListener {
     private lateinit var viewFinder: PreviewView
     private lateinit var outputDirectory: File
 
-    private var displayId: Int = -1
     private var lensFacing: Int = LENS_FACING_FRONT
     private var preview: Preview? = null
     private var imageCapture: ImageCapture? = null
-    private var imageAnalyzer: ImageAnalysis? = null
     private var camera: Camera? = null
     private var imageUri: Uri? = null
     private var cameraProvider: ProcessCameraProvider? = null

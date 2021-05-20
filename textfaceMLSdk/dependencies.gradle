@@ -13,14 +13,10 @@ ext.versions = [
         junit                        : '4.12',
         androidJunit                 : '1.1.0',
         espresso                     : '3.2.0',
-
-        firebaseFirestore            : '21.6.0',
-        networkmodule                : '1.1.02',
         eventbus                     : '3.1.1'
 ]
 
 ext.libraries = [
-
         kotlinJdk7                 : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
         kotlinxCoroutines          : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlinxCoroutines"
 ]
@@ -30,8 +26,6 @@ ext.androidLibraries = [
         androidxCoreKtx                 : "androidx.core:core-ktx:$versions.androidxCoreKtx",
         lifeCycleExtensions             : "androidx.lifecycle:lifecycle-extensions:$versions.lifeCycle",
         playServicesLocation            : "com.google.android.gms:play-services-location:$versions.playServicesLocation",
-        firebaseFirestore               : "com.google.firebase:firebase-firestore-ktx:$versions.firebaseFirestore",
-        networkmodule                   : "com.redbus.artifactory:networkmodule:$versions.networkmodule",
         eventbus                        : "org.greenrobot:eventbus:$versions.eventbus"
 ]
 

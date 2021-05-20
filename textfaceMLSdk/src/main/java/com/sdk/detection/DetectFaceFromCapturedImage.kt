@@ -32,7 +32,9 @@ object DetectFaceFromCapturedImage {
     }
 
     private fun processFaceList(face: Face): FaceModel {
+
         var faceObject = FaceModel()
+
         faceObject.headEulerAngleY = face.headEulerAngleY
         faceObject.headEulerAngleZ = face.headEulerAngleZ
         val leftEar = face.getLandmark(FaceLandmark.LEFT_EAR)

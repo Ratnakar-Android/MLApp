@@ -1,4 +1,4 @@
-package com.redbus.facedetectionapplication
+package com.ml
 
 import org.junit.Test
 
