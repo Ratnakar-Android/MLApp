@@ -1,7 +1,7 @@
 # MLApp
 
-In the repo code, We have an android App which has android sdk integrated and this sdk is using Android ML 
-tool kit for reading text from captured images and doing Photo detection as well. 
+In the repo code, We have an android App which has android sdk integrated. Sdk is using Android ML 
+tool kit for reading text from captured images and doing processing the Photo detection.
 
 Prerequisites:
 
@@ -10,9 +10,9 @@ Try to run the App on a real device to see the exact flow.
 
 GutHub repo contains:
 
-1. Android App
-2. Testing Framework
-3. Sdk (Framework which is internally using Android ML kit)
+1. Image processing sdk based on ML kit.
+2. Sample App.
+3. Sdk flow document.
 
 
 Fyi : For testing the feature we have stored image internally and reading text and detecting face from that, 
