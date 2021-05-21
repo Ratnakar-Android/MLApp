@@ -35,12 +35,20 @@ Text Recognition Flow :
    the result back.
 
      SdkCommunicatorImpl.instance.initCameraForTextRecognition(
-        this, object : TextResultListener {
-         override fun textContentResult(photoTextContent: String) {
-              // Here app will get the result from Sdk
+        
+        this, object : TextResultListener {
+        
+        override fun textContentResult(photoTextContent: String) {
+         
+         // Here app will get the result from Sdk
+         
              }
+             
           override fun textContentException(errorMessage: String) {
-              // Here app will get the exception while reading the text from Sdk
+              
+              // Here app will get the exception while reading the text from Sdk
+              
+              
              }
        })
     }
